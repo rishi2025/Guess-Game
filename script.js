@@ -26,6 +26,7 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.In').style.backgroundColor = '#60b347';
         document.querySelector('.score').style.backgroundColor = '#60b347';
         document.querySelector('.hscore').style.backgroundColor = '#60b347';
+        document.querySelector('.tempInstructions').style.backgroundColor = '#60b347';
     }
 
     else if (guess > num) {
@@ -43,6 +44,7 @@ document.querySelector('.check').addEventListener('click', function () {
             document.querySelector('.In').style.backgroundColor = '#FF6969';
             document.querySelector('.score').style.backgroundColor = '#FF6969';
             document.querySelector('.hscore').style.backgroundColor = '#FF6969';
+            document.querySelector('.tempInstructions').style.backgroundColor = '#FF6969';
         }
     }
 
@@ -61,6 +63,7 @@ document.querySelector('.check').addEventListener('click', function () {
             document.querySelector('.In').style.backgroundColor = '#FF6969';
             document.querySelector('.score').style.backgroundColor = '#FF6969';
             document.querySelector('.hscore').style.backgroundColor = '#FF6969';
+            document.querySelector('.tempInstructions').style.backgroundColor = '#FF6969';
         }
     }
 })
@@ -79,4 +82,5 @@ document.querySelector('.again').addEventListener('click', function () {
     document.querySelector('.In').style.backgroundColor = '#252020';
     document.querySelector('.score').style.backgroundColor = '#252020';
     document.querySelector('.hscore').style.backgroundColor = '#252020';
+    document.querySelector('.tempInstructions').style.backgroundColor = '#252020';
 })
