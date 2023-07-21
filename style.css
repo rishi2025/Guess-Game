@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(37, 32, 32);
+    background-color: #252020;
 }
 
 .again {
     width: 20%;
-    padding: 20px;
+    padding: 1.8%;
     background-color: aliceblue;
     text-emphasis-color: black;
     font-weight: bolder;
@@ -12,6 +12,10 @@ body {
     font-size: larger;
     border-radius: 5%;
     border: solid black;
+}
+
+.again:hover {
+    background-color: bisque;
 }
 
 .answer {
@@ -24,7 +28,7 @@ body {
 
 .check {
     width: 35%;
-    padding: 20px;
+    padding: 4.3%;
     margin-top: 5%;
     margin-left: 1.5%;
     background-color: aliceblue;
@@ -34,6 +38,10 @@ body {
     font-size: larger;
     border-radius: 40%;
     border: solid black;
+}
+
+.check:hover {
+    background-color: bisque;
 }
 
 .hscore {
