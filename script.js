@@ -5,6 +5,18 @@ document.querySelector('.subs').textContent = 20;
 document.querySelector('.hsubs').textContent = 0;
 let currScore = 20;
 
+const open = function () {
+    document.querySelector('.modal').classList.remove('hidden');
+    document.querySelector('.modal').classList.add('modalDisplay');
+    document.querySelector('.overlay').classList.remove('hidden');
+}
+
+document.querySelector('.yay').addEventListener('click', function () {
+    document.querySelector('.modal').classList.remove('modalDisplay');
+    document.querySelector('.modal').classList.add('hidden');
+    document.querySelector('.overlay').classList.add('hidden');
+});
+
 document.querySelector('.check').addEventListener('click', function () {
     const guess = Number(document.querySelector('.In').value);
 
@@ -18,6 +30,7 @@ document.querySelector('.check').addEventListener('click', function () {
         if (val < currScore) {
             document.querySelector('.instructions').textContent = '🥳🎉 Correct Number';
             document.querySelector('.hsubs').textContent = currScore;
+            open();
         }
         document.querySelector('.answer').textContent = num;
         document.querySelector('body').style.backgroundColor = '#60b347';

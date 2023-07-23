@@ -12,10 +12,12 @@ body {
     font-size: 115%;
     border-radius: 5%;
     border: solid black;
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .again:hover {
     background-color: bisque;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .answer {
@@ -37,11 +39,13 @@ body {
     font-family:cursive;
     font-size: larger;
     border-radius: 40%;
-    border: solid black;
+    /* border: solid black; */
+    box-shadow: 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 .check:hover {
     background-color: bisque;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hscore {
@@ -52,6 +56,10 @@ body {
     font-family:cursive;
     background-color: rgb(37, 32, 32);
 } 
+
+.hidden {
+    display: none;
+}
 
 .In {
     width: 40%;
@@ -99,6 +107,38 @@ body {
     color: antiquewhite;
     font-family:cursive;
     text-align: center;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 40%;
+    align-items: center;
+    font-family: cursive;
+    background-color: bisque;
+    /* padding: 3%; */
+    z-index: 10;
+    margin: 10% 30%;
+    border-radius: 10%;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+.modalDisplay {
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .playGround {
@@ -168,4 +208,19 @@ body {
     margin-bottom: 10%;
     font-family:cursive;
     color: aliceblue;
+}
+
+.yay {
+    width: 15%;
+    padding: 1.3%;
+    font-size: 100%;
+    font-family: cursive;
+    background-color: aqua;
+    box-shadow: 4px 4px rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.yay:hover {
+    background-color: rgb(115, 195, 195);
+    box-shadow: 1px 1px rgba(0,0,0,0.5);
 }
